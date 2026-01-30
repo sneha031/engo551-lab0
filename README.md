@@ -5,6 +5,10 @@
 
 ## Pages (HTML)
 
+## Overview
+This is a personal website about myself that highlights my interests whch are, space, content creation, and art.  
+All pages share the same theme, in various different styles and buttons used.
+
 - **index.html**  
   The homepage with a hero video, a short introduction, and three clickable cards that link to my main sections.
 
@@ -18,9 +22,12 @@
   A page about art and creativity. It includes a slideshow and a table that compares art I have done vs art I want to do.
 
 ## Styling (CSS / SCSS)
-
 - **styles.scss**  
-  This is the code responsible for creating all the style of the webpage and making it look nice
+  Main stylesheet written in SCSS. Uses variables, nesting, and inheritance 
+- **styles.css**  
+  Compiled CSS output from styles.scss - what the web loads 
+- **styles.css.map**  
+  Debugging SCSS in the browser 
 
 - **img/**  
   Contains images used for the entire webpage
@@ -28,6 +35,9 @@
 - **vids/**  
   Contains the video for the homepage.
 
+# Additionally:
+- Bootstrap 4 is used for layout (grid system) and the carousel/slideshow component.
+- The site includes a responsive media query for smaller screens.
 
 ## How to Run
 
