@@ -24,6 +24,11 @@ body::before {
   z-index: -1;
 }
 
+.page {
+  max-width: 1200px;
+  margin: 18px auto;
+  padding: 0 16px;
+}
 
 .navbar {
   background: #d64a73;
@@ -33,7 +38,7 @@ body::before {
   gap: 18px;
 }
 .navbar .nav-link {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 12px;
@@ -41,12 +46,6 @@ body::before {
 }
 .navbar .nav-link:hover {
   background: rgba(255, 255, 255, 0.18);
-}
-
-.page {
-  max-width: 1200px;
-  margin: 18px auto;
-  padding: 0 16px;
 }
 
 .hero-panel {
@@ -125,6 +124,9 @@ body::before {
   transform: translateY(0);
   transition: 0.15s;
 }
+.card:hover {
+  transform: translateY(-3px);
+}
 .card img {
   width: 100%;
   height: 260px;
@@ -140,14 +142,10 @@ body::before {
   text-align: center;
   font-weight: 800;
   font-size: 18px;
-  color: white;
+  color: #ffffff;
   background: rgba(214, 74, 115, 0.45);
   backdrop-filter: blur(2px);
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
-}
-
-.card:hover {
-  transform: translateY(-3px);
 }
 
 .btn-softpink {
@@ -160,7 +158,6 @@ body::before {
   text-decoration: none;
   display: inline-block;
 }
-
 .btn-softpink:hover {
   background: rgba(214, 74, 115, 0.18);
   color: #d64a73;
@@ -178,10 +175,17 @@ body::before {
   padding: 14px;
   margin-top: 18px;
 }
-.carousel-frame img {
+.carousel-frame .carousel-item img {
+  width: 100%;
+  height: clamp(240px, 45vw, 520px);
+  object-fit: contain;
+  background: #ffffff;
   border-radius: 14px;
-  height: 420px;
+  display: block;
+}
+.carousel-frame .carousel-item img.is-wide {
   object-fit: cover;
+  background: transparent;
 }
 
 .table-soft {
@@ -214,29 +218,6 @@ body::before {
   .hero-panel .hero-title {
     font-size: 34px;
   }
-  .carousel-frame img {
-    height: 260px;
-  }
-}
-.carousel-frame .carousel-item img {
-  width: 100%;
-  height: clamp(240px, 45vw, 520px);
-  object-fit: contain;
-  background: #ffffff;
 }
 
-.carousel-frame .carousel-item img {
-  width: 100%;
-  height: 420px; 
-  object-fit: contain;
-  background: #fff; 
-  display: block;
-}
-
-
-.carousel-frame .carousel-item img.is-wide {
-  object-fit: cover;
-  background: transparent; 
-}
-
-
+/*# sourceMappingURL=styles.css.map */
